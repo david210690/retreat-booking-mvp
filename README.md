@@ -1,15 +1,16 @@
 # Corporate Retreat Booking MVP
 
-End-to-end booking flow: enquiry → quote → approval → payment → invoice.
+End-to-end flow: enquiry → quote (PDF) → approval → payment → invoice.
 
 ## Modules
 - Enquiries (public form) → CRM view
 - Quotes (PDF) with line items & taxes
 - Approvals (manager/admin) + email
-- Payments (Stripe) + ledger entries
+- Payments (Stripe-ready scaffold)
 - Reports: bookings by org, margin, status
 
 ## Setup
-- Import `/sql/retreat.sql` into Supabase
-- `pnpm i && pnpm dev`
+- Run `/sql/retreat.sql` in Supabase (SQL Editor).
+- Add env vars as in the starter repo.
+- Optional: expose `/api/quote` to generate a sample PDF.
 
