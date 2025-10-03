@@ -1,16 +1,35 @@
-# Corporate Retreat Booking MVP
 
-End-to-end flow: enquiry → quote (PDF) → approval → payment → invoice.
+---
 
-## Modules
-- Enquiries (public form) → CRM view
-- Quotes (PDF) with line items & taxes
-- Approvals (manager/admin) + email
-- Payments (Stripe-ready scaffold)
-- Reports: bookings by org, margin, status
+## 2️⃣ **retreat-booking-mvp**
 
-## Setup
-- Run `/sql/retreat.sql` in Supabase (SQL Editor).
-- Add env vars as in the starter repo.
-- Optional: expose `/api/quote` to generate a sample PDF.
+```md
+# 🏝️ Retreat Booking MVP
 
+A **corporate retreat booking workflow** MVP: from enquiry → quote → approval → payment → reports.  
+Built with **Next.js + Supabase**, with extendable schemas for real-world retreat management.
+
+---
+
+## ✨ Features
+- 📝 Enquiry capture form  
+- 📑 Auto-generated PDF quotes  
+- ✅ Approval workflow (status updates)  
+- 💳 Stripe-ready payment hooks  
+- 📊 Reporting dashboard (Supabase queries)  
+
+---
+
+## 📂 Structure
+- `/app` → booking routes (enquiry, quotes, approval)  
+- `/lib` → Supabase client utilities  
+- `/sql` → retreat schema (enquiries, orgs, members, quotes, payments)  
+- `.env.example` → environment template  
+
+---
+
+## 🚀 Quickstart
+```bash
+pnpm i
+cp .env.example .env.local
+pnpm dev
